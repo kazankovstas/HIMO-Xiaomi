@@ -1,1 +1,1 @@
-$((function(){$(".bike-slider").slick({arrows:!1,dots:!0,fade:!0,autoplay:!0,autoplaySpeed:2e3})}));
+$((function(){$(".bike-slider").slick({arrows:!1,dots:!0,fade:!0,autoplay:!0,autoplaySpeed:2e3})})),$((function(){$(".gallery__list").slick({arrows:!1,dots:!0,fade:!0,autoplay:!0,autoplaySpeed:3e3})}));
