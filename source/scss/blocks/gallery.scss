@@ -1,0 +1,23 @@
+.gallery {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 50px;
+  & .slick-dots {
+    left: -50px;
+  }
+}
+
+.gallery__list {
+  list-style: none;
+  max-width: 1150px;
+  max-height: 632px;
+}
+
+.gallery__item {
+  max-height: 604px;
+}
+
+.gallery__image {
+  vertical-align: top;
+  object-fit: cover;
+}

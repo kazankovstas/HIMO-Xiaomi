@@ -1,0 +1,31 @@
+.advantages {
+  margin-bottom: 150px;
+}
+
+.advantages__inner {
+  max-width: 1120px;
+  display: flex;
+  gap: 60px;
+}
+
+// .advantages__image {
+// }
+
+.advantages__list {
+  list-style: none;
+}
+
+.advantages__item:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.advantages__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.advantages__description {
+  max-width: 450px;
+}
