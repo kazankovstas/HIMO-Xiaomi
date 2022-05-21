@@ -1,5 +1,5 @@
 .specifications {
-  // border: 1px solid cyan;
+  padding-top: 100px;
   margin-bottom: 150px;
 }
 
@@ -46,6 +46,7 @@
   row-gap: 5px;
   & dt {
     grid-column: 1;
+    padding-right: 10px;
   }
   & dd {
     grid-column: 2;

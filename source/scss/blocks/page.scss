@@ -4,9 +4,17 @@
 }
 
 .page__body {
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;
+  // display: grid;
+  // grid-template-rows: min-content 1fr min-content;
+  // align-content: start;
+  // min-height: 100%;
+  // max-width: 1220px;
+  // min-width: 320px;
+  // margin: 0 auto;
+  // padding: 0 10px;
+}
+
+.page__wrapper {
   min-height: 100%;
   max-width: 1220px;
   min-width: 320px;

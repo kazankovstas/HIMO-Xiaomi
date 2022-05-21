@@ -1,0 +1,123 @@
+.price {
+  margin-bottom: 100px;
+}
+
+.price_inner {
+  position: relative;
+}
+
+.form {
+  max-width: 420px;
+}
+
+.form__title {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.form__description {
+  max-width: 300px;
+  margin-bottom: 30px;
+}
+
+.input__name,
+.input__tel {
+  display: block;
+  width: 100%;
+  padding: 10px 0 10px 6px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid $black;
+  &::placeholder {
+    font-family: inherit;
+    color: $gray;
+    opacity: 0.5;
+  }
+}
+
+.input__tel {
+}
+
+.form__color {
+  margin-bottom: 10px;
+  color: $gray;
+  opacity: 0.5;
+}
+
+.form__radio-container {
+  display: flex;
+}
+
+.form__label {
+  &:not(:last-child) {
+    margin-right: 23px;
+  }
+  margin-bottom: 50px;
+}
+
+.card {
+  display: none;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.card__image {
+  vertical-align: top;
+}
+
+.card__price {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  width: 221px;
+  height: 100px;
+  transform: translateX(-50%);
+  border: 1px solid $accent;
+  border-radius: 50%;
+  text-transform: uppercase;
+  font-size: 32px;
+  line-height: 100px;
+  text-align: center;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 12px;
+    left: 0;
+    width: 221px;
+    height: 100px;
+    border: 1px solid $accent;
+    border-radius: 50%;
+  }
+}
+
+.card__btn {
+  width: 80px;
+  height: 12px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  &:hover {
+    transform: scale(1.04);
+  }
+  &_grey {
+    background-color: $gray;
+  }
+  &_white {
+    background-color: $white;
+    border: 1px solid $gray;
+  }
+  &_red {
+    background-color: $accent;
+  }
+}
+
+.card__btn:checked + .card {
+  display: block;
+}
+
+.form__input-radio:checked + .card {
+  display: block;
+}

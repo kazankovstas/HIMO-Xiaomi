@@ -24,6 +24,7 @@
     <title>HIMO Xiaomi</title>
   </head>
   <body class="page__body">
+    <div class="page__wrapper">
     <header class="page__header header">
       <div class="header__inner">
         <a class="logo" href="#">
@@ -38,13 +39,13 @@
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__item">
-              <a href="#" class="menu__link">Описание</a>
+              <a href="#advantages" class="menu__link">Описание</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Характеристики</a>
+              <a href="#specifications" class="menu__link">Характеристики</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Стоимость</a>
+              <a href="#price" class="menu__link">Стоимость</a>
             </li>
           </ul>
         </nav>
@@ -71,7 +72,7 @@
                 эргономичное сидение делают каждую поездку гораздо приятнее.
               </p>
             </div>
-            <a class="button" href="#">Заказать</a>
+            <a class="button" href="#price">Заказать</a>
           </div>
           <div class="bike__column bike__column_slider">
             <div class="bike-slider">
@@ -117,7 +118,7 @@
           </div>
         </div>
       </section>
-      <section class="advantages">
+      <section class="advantages" id="advantages">
         <div class="advantages__inner">
           <h2 class="visually-hidden">Преимущества</h2>
           <img
@@ -144,7 +145,7 @@
             <li class="advantages__item">
               <h3 class="advantages__title">Прочная и легкая рама</h3>
               <p class="advantages__description">
-                Рама HIMO C26 изготовлена из прочного и легкого алюминиевого
+                Рама HIMO C26 изготовлена из прочного из легкого алюминиевого
                 сплава и отличается высокой надежностью, устойчивостью в
                 аварийных ситуациях, превосходной управляемостью и комфортным
                 передвижением по любой дороге.
@@ -197,7 +198,7 @@
           </ul>
         </div>
       </section>
-      <section class="specifications">
+      <section class="specifications" id="specifications">
         <h2 class="specifications__title">Характеристики</h2>
         <div class="specifications__inner">
             <ul class="specifications__list">
@@ -289,8 +290,87 @@
           </li>
         </ul>
       </section>
+      <section class="price" id="price">
+        <div class="price_inner">
+          <h2 class="visually-hidden">Выбрать велосипед</h2>
+          <form class="form" action="https://echo.htmlacademy.ru"
+          method="get">
+          <h3 class="form__title">Заказать</h3>
+          <p class="form__description">Если Вы хотите заказать велосипед, оставьте свой контакт и наш менеджер перезвонит вам в ближайшее время</p>
+          <input class="input__name" type="text" placeholder="имя" >
+          <input class="input__tel" type="text" placeholder="телефон" >
+          <p class="form__color">выберите желаемый цвет</p>
+          <div class="form__radio-container">
+            <label class="form__label">
+              <input class="form__input-radio visually-hidden" type="radio" name="color-btn" value="Серый велосипед" checked>
+              <div class="form__card card">
+                <img class="card__image" src="img/himo-dark.jpg" alt="Серый велосипед">
+                <p class="card__price">65 990 &#8381;</p>
+              </div>
+              <div class="card__btn card__btn_grey"></div>
+            </label>
+            <label class="form__label">
+              <input class="form__input-radio visually-hidden" type="radio" name="color-btn" value="Белый велосипед">
+              <div class="form__card card">
+                <img class="card__image" src="img/himo-white.jpg" alt="Белый велосипед">
+                <p class="card__price">65 490 &#8381;</p>
+              </div>
+              <div class="card__btn card__btn_white"></div>
+            </label>
+            <label class="form__label">
+              <input class="form__input-radio visually-hidden" type="radio" name="color-btn" value="Красный велосипед">
+              <div class="form__card card">
+                <img class="card__image" src="img/himo-red.jpg" alt="Красный велосипед">
+                <p class="card__price">66 490 &#8381;</p>
+              </div>
+              <div class="card__btn card__btn_red"></div>
+            </label>
+          </div>
+          <button class="button" type="submit" aria-label="Заказать велоспиде">Заказать</button>
+        </form>
+        </div>
+      </section>
     </main>
-    <footer class="page__footer footer"></footer>
+  </div>
+    <footer class="page__footer footer">
+      <div class="footer__inner">
+        <a class="footer__conf" href="#">Политика конфиденциальности</a>
+        <ul class="footer__social social">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg width="29" height="28">
+                <use xlink:href="img/sprites.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg width="29" height="28">
+                <use xlink:href="img/sprites.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <ul class="footer__contacts contacts">
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+3805067777">
+              <span>+38 050 677 77</span>
+              <svg width="24" height="24">
+                <use xlink:href="img/sprites.svg#phone"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:elektrobike@gmail.com">
+              <span>elektrobike@gmail.com</span>
+              <svg width="24" height="24">
+                <use xlink:href="img/sprites.svg#mail"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
