@@ -6,6 +6,7 @@
   color: $white;
   background-color: $black;
   font-size: 20px;
+  text-align: center;
   letter-spacing: 1.1em;
   text-transform: uppercase;
   text-decoration: none;
@@ -13,5 +14,25 @@
   cursor: pointer;
   &:hover {
     background-color: $accent;
+  }
+  @media (max-width: 1110px) {
+    margin-bottom: 30px;
+    width: 340px;
+    padding: 20px 0;
+    font-size: 16px;
+  }
+  @media (max-width: 490px) {
+    width: 280px;
+    font-size: 14px;
+    letter-spacing: 10px;
+  }
+  @media (max-width: 360px) {
+    align-self: center;
+  }
+}
+
+.form__button {
+  @media (max-width: 1110px) {
+    width: 100%;
   }
 }

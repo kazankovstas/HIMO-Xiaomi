@@ -37,9 +37,6 @@
   }
 }
 
-.input__tel {
-}
-
 .form__color {
   margin-bottom: 10px;
   color: $gray;
@@ -120,4 +117,67 @@
 
 .form__input-radio:checked + .card {
   display: block;
+}
+
+@media (max-width: 1110px) {
+  .form {
+    position: relative;
+    margin: 0 auto;
+  }
+  .form__radio-container {
+    margin-bottom: 260px;
+  }
+  .card {
+    max-width: 420px;
+    bottom: 100px;
+    right: auto;
+    left: 0;
+  }
+  .card__price {
+    width: 140px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    top: -38px;
+    right: 0;
+    transform: translateX(211%) rotate(3deg);
+    &::before {
+      width: 140px;
+      height: 60px;
+      top: 5px;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: $tablet-width) {
+  .card__price {
+    transform: none;
+    top: -75px;
+    left: 84px;
+    right: 0;
+  }
+  .form__radio-container {
+    margin-bottom: 330px;
+  }
+  .price {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 390px) {
+  .form__label {
+    margin: 0;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .card__price {
+    transform: translateX(40%);
+  }
+}
+
+@media (max-width: 360px) {
+  .card__price {
+    transform: translateX(10%);
+  }
 }
