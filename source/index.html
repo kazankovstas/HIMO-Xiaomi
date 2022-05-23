@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="favicon.ico" />
-    <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="img/favicon/apple.png" />
-    <link rel="manifest" href="manifest.webmanifest" />
+    <meta name="description" content="My pet-project" />
     <link
       rel="preload"
       href="fonts/inter/Inter-400.woff2"
@@ -16,10 +13,13 @@
     />
     <link
       rel="preload"
-      href="fonts/inter/Inter-900.woff2"
+      href="fonts/inter/Inter-700.woff2"
       type="font/woff2"
       as="font"
     />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="img/favicon/apple.png" />
     <link rel="stylesheet" href="css/style.min.css" />
     <title>HIMO Xiaomi</title>
   </head>
@@ -56,7 +56,7 @@
         <div class="bike__inner">
           <div class="bike__column bike__column_description">
             <h1 class="bike__title">Xiaomi Himo C26</h1>
-            <h3 class="bike__subtitle">Электрический велосипед</h3>
+            <h2 class="bike__subtitle">Электрический велосипед</h2>
             <div class="bike__description">
               <p class="bike__text">
                 Полная свобода передвижения и надежный транспорт для путешествий
@@ -72,30 +72,43 @@
                 эргономичное сидение делают каждую поездку гораздо приятнее.
               </p>
             </div>
-            <a class="button" href="#price">Заказать</a>
+            <a class="button" href="#price">Заказать<span class="visually-hidden">Заказать велосипед</span></a>
           </div>
           <div class="bike__column bike__column_slider">
             <div class="bike-slider">
-              <img
+              <picture>
+                <source type="image/webp" srcset="img/bike-1.webp" />
+                <img
                 class="bike-slider__item"
-                src="img/bike-1.jpg"
+                src="img/bike-1.jpg" width="630" height="525"
                 alt="Фото 1"
               />
-              <img
+              </picture>
+              <picture>
+                <source type="image/webp" srcset="img/bike-2.webp" />
+                <img
                 class="bike-slider__item"
-                src="img/bike-2.jpg"
+                src="img/bike-2.jpg" width="630" height="525"
                 alt="Фото 2"
-              />
-              <img
+                />
+              </picture>
+
+              <picture>
+                <source type="image/webp" srcset="img/bike-3.webp" />
+                <img
                 class="bike-slider__item"
-                src="img/bike-3.jpg"
+                src="img/bike-3.jpg" width="630" height="525"
                 alt="Фото 3"
-              />
-              <img
+                />
+              </picture>
+              <picture>
+                <source type="image/webp" srcset="img/bike-4.webp" />
+                <img
                 class="bike-slider__item"
-                src="img/bike-4.jpg"
+                src="img/bike-4.jpg" width="630" height="525"
                 alt="Фото 4"
-              />
+                />
+              </picture>
             </div>
             <ol class="bike__list">
               <li class="bike__item">
@@ -121,13 +134,16 @@
       <section class="advantages" id="advantages">
         <div class="advantages__inner">
           <h2 class="visually-hidden">Преимущества</h2>
-          <img
+          <picture>
+            <source type="image/webp" srcset="img/advantages-image.webp" />
+            <img
             class="advantages__image"
             src="img/advantages-image.jpg"
             width="570"
             height="1053"
             alt="Девушка на велосипеде"
           />
+          </picture>
           <ul class="advantages__list">
             <li class="advantages__item">
               <h3 class="advantages__title">Комфорт и безопасность от HIMO</h3>
@@ -216,7 +232,7 @@
                 </dl>
               </li>
               <li class="specifications__item">
-                <h4 class="specifications__name">Амортизация</h4>
+                <h3 class="specifications__name">Амортизация</h3>
                 <dl class="specifications__discr">
                   <dt>Тип амортизации</dt>
                   <dd>амортизирующая вилка (Hard tail)</dd>
@@ -225,7 +241,7 @@
                 </dl>
               </li>
               <li class="specifications__item">
-                <h4 class="specifications__name">Управление</h4>
+                <h3 class="specifications__name">Управление</h3>
                 <dl class="specifications__discr">
                   <dt>Руль</dt>
                   <dd>изогнутый, регулируемый подъем</dd>
@@ -234,7 +250,7 @@
                 </dl>
               </li>
               <li class="specifications__item">
-                <h4 class="specifications__name">Характеристика трансмиссии</h4>
+                <h3 class="specifications__name">Характеристика трансмиссии</h3>
                 <dl class="specifications__discr">
                   <dt>Количество скоростей</dt>
                   <dd>7</dd>
@@ -249,7 +265,7 @@
                 </dl>
               </li>
               <li class="specifications__item">
-                <h4 class="specifications__name">Тормоза</h4>
+                <h3 class="specifications__name">Тормоза</h3>
                 <dl class="specifications__discr">
                   <dt>Передний</dt>
                   <dd>дисковый механический</dd>
@@ -260,7 +276,7 @@
                 </dl>
               </li>
               <li class="specifications__item">
-                <h4 class="specifications__name">Прочее</h4>
+                <h3 class="specifications__name">Прочее</h3>
                 <dl class="specifications__discr">
                   <dt>Оснащение</dt>
                   <dd>электрооборудование, звонок</dd>
@@ -269,24 +285,36 @@
                 </dl>
               </li>
             </ul>
-          <img
+            <picture>
+              <source type="image/webp" srcset="img/specifications-image.webp" />
+              <img
               class="specifications__image"
               src="img/specifications-image.jpg" width="570" height="401"
               alt="Характеристики"
-            />
+              />
+            </picture>
         </div>
       </section>
       <section class="gallery">
         <h2 class="visually-hidden">Галерея снимков</h2>
         <ul class="gallery__list">
           <li class="gallery__item">
-            <img class="gallery__image" src="img/himo-1.jpg" width="1150" height="632" alt="Изображение велосипеда HIMO">
+            <picture>
+              <source type="image/webp" srcset="img/himo-1.webp" />
+              <img class="gallery__image" src="img/himo-1.jpg" width="1150" height="632" alt="Изображение велосипеда HIMO">
+            </picture>
           </li>
           <li class="gallery__item">
-            <img class="gallery__image" src="img/himo-2.jpg" width="1200" height="630" alt="Изображение велосипеда HIMO">
+            <picture>
+              <source type="image/webp" srcset="img/himo-2.webp" />
+              <img class="gallery__image" src="img/himo-2.jpg" width="1200" height="630" alt="Изображение велосипеда HIMO">
+            </picture>
           </li>
           <li class="gallery__item">
-            <img class="gallery__image" src="img/himo-3.jpg" width="1200" height="630" alt="Изображение велосипеда HIMO">
+            <picture>
+              <source type="image/webp" srcset="img/himo-3.webp" />
+              <img class="gallery__image" src="img/himo-3.jpg" width="1200" height="630" alt="Изображение велосипеда HIMO">
+            </picture>
           </li>
         </ul>
       </section>
@@ -301,32 +329,41 @@
           <input class="input__tel" type="text" placeholder="телефон" >
           <p class="form__color">выберите желаемый цвет</p>
           <div class="form__radio-container">
-            <label class="form__label">
-              <input class="form__input-radio visually-hidden" type="radio" name="color-btn" value="Серый велосипед" checked>
+            <label class="form__label" for="bike-gray">
+              <input class="form__input-radio visually-hidden" type="radio" name="color-btn" id="bike-gray" value="Серый велосипед" checked>
               <div class="form__card card">
-                <img class="card__image" src="img/himo-dark.jpg" alt="Серый велосипед">
+                <picture>
+                  <source type="image/webp" srcset="img/himo-dark.webp" />
+                  <img class="card__image" src="img/himo-dark.jpg" width="630" height="403" alt="Серый велосипед">
+                </picture>
                 <p class="card__price">65 990 &#8381;</p>
               </div>
               <div class="card__btn card__btn_grey"></div>
             </label>
-            <label class="form__label">
-              <input class="form__input-radio visually-hidden" type="radio" name="color-btn" value="Белый велосипед">
+            <label class="form__label" for="bike-white">
+              <input class="form__input-radio visually-hidden" type="radio" name="color-btn" id="bike-white" value="Белый велосипед">
               <div class="form__card card">
-                <img class="card__image" src="img/himo-white.jpg" alt="Белый велосипед">
+                <picture>
+                  <source type="image/webp" srcset="img/himo-white.webp" />
+                  <img class="card__image" src="img/himo-white.jpg" width="630" height="403" alt="Белый велосипед">
+                </picture>
                 <p class="card__price">65 490 &#8381;</p>
               </div>
               <div class="card__btn card__btn_white"></div>
             </label>
-            <label class="form__label">
-              <input class="form__input-radio visually-hidden" type="radio" name="color-btn" value="Красный велосипед">
+            <label class="form__label" for="bike-red">
+              <input class="form__input-radio visually-hidden" type="radio" name="color-btn" id="bike-red" value="Красный велосипед">
               <div class="form__card card">
-                <img class="card__image" src="img/himo-red.jpg" alt="Красный велосипед">
+                <picture>
+                  <source type="image/webp" srcset="img/himo-red.webp" />
+                  <img class="card__image" src="img/himo-red.jpg" width="630" height="403" alt="Красный велосипед">
+                </picture>
                 <p class="card__price">66 490 &#8381;</p>
               </div>
               <div class="card__btn card__btn_red"></div>
             </label>
           </div>
-          <button class="button form__button" type="submit" aria-label="Заказать велоспиде">Заказать</button>
+          <button class="button form__button" type="submit" aria-label="Заказать велосипед">Заказать</button>
         </form>
         </div>
       </section>
@@ -334,13 +371,14 @@
   </div>
     <footer class="page__footer footer">
       <div class="footer__inner">
-        <a class="footer__conf" href="#">Политика конфиденциальности</a>
+        <a class="footer__conf" href="#">Политика конфиденциальности<span class="visually-hidden">Политика конфиденциальности</span></a>
         <ul class="footer__social social">
           <li class="social__item">
             <a class="social__link" href="#">
               <svg width="29" height="28">
                 <use xlink:href="img/sprites.svg#instagram"></use>
               </svg>
+              <span class="visually-hidden">Instagram</span>
             </a>
           </li>
           <li class="social__item">
@@ -348,6 +386,7 @@
               <svg width="29" height="28">
                 <use xlink:href="img/sprites.svg#facebook"></use>
               </svg>
+              <span class="visually-hidden">Facebook</span>
             </a>
           </li>
         </ul>
@@ -358,6 +397,7 @@
               <svg width="24" height="24">
                 <use xlink:href="img/sprites.svg#phone"></use>
               </svg>
+              <span class="visually-hidden">Позвоните нам</span>
             </a>
           </li>
           <li class="contacts__item">
@@ -366,6 +406,7 @@
               <svg width="24" height="24">
                 <use xlink:href="img/sprites.svg#mail"></use>
               </svg>
+              <span class="visually-hidden">Напишите нам</span>
             </a>
           </li>
         </ul>

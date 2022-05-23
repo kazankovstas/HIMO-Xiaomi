@@ -30,6 +30,7 @@
   text-transform: uppercase;
   font-size: 14px;
   transition: all 0.3s ease-in-out;
+  -webkit-tap-highlight-color: transparent;
   &:hover {
     color: $white;
     background-color: $black;

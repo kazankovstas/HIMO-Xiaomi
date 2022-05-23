@@ -40,7 +40,6 @@
 .form__color {
   margin-bottom: 10px;
   color: $gray;
-  opacity: 0.5;
 }
 
 .form__radio-container {
@@ -95,6 +94,7 @@
   height: 12px;
   border-radius: 30px;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
   transition: all 0.2s ease-in;
   &:hover {
     transform: scale(1.04);
@@ -120,9 +120,15 @@
 }
 
 @media (max-width: 1110px) {
+  .price {
+    margin-bottom: 40px;
+  }
   .form {
     position: relative;
     margin: 0 auto;
+  }
+  .form__title {
+    margin-bottom: 18px;
   }
   .form__radio-container {
     margin-bottom: 260px;
@@ -149,35 +155,43 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: $tablet-width) {
-  .card__price {
-    transform: none;
-    top: -75px;
-    left: 84px;
-    right: 0;
+@media (max-width: $tablet-width) {
+  .form__color {
+    text-align: center;
   }
   .form__radio-container {
-    margin-bottom: 330px;
+    margin-bottom: 290px;
+    justify-content: center;
   }
-  .price {
-    margin-bottom: 50px;
-  }
-}
-
-@media (max-width: 390px) {
   .form__label {
-    margin: 0;
+    margin-bottom: 0;
+  }
+  .card__price {
+    transform: none;
+    top: 42px;
+    right: 0;
+    left: auto;
+    border: 2px solid #ff4040;
+    border-radius: 8px;
+    font-size: 18px;
+    line-height: 36px;
+    height: 36px;
+    width: 100px;
+    &::before {
+      display: none;
+    }
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: 380px) {
   .card__price {
-    transform: translateX(40%);
+    top: -40px;
+    right: 94px;
   }
 }
 
-@media (max-width: 360px) {
-  .card__price {
-    transform: translateX(10%);
+@media (max-width: 340px) {
+  .form__radio-container {
+    margin-bottom: 270px;
   }
 }
