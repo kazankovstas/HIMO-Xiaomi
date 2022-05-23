@@ -1,3 +1,15 @@
+.logo {
+  &:focus-visible {
+    box-shadow: 0 0 2px 2px $accent;
+    outline: none;
+  }
+  @media (max-width: $tablet-width) {
+    &:focus-visible {
+      box-shadow: none;
+    }
+  }
+}
+
 .logo_image {
   vertical-align: top;
 }

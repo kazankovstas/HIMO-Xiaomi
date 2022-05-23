@@ -23,6 +23,11 @@
   &:hover {
     color: $accent;
   }
+  &:focus-visible {
+    color: $accent;
+    outline: none;
+    border: none;
+  }
 }
 
 .footer__conf {

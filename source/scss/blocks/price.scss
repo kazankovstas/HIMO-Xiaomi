@@ -35,6 +35,12 @@
     color: $gray;
     opacity: 0.5;
   }
+  &:focus-visible {
+    box-shadow: 0 0 2px 2px $accent;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+  }
 }
 
 .form__color {
@@ -96,8 +102,14 @@
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
   transition: all 0.2s ease-in;
+  border: none;
   &:hover {
     transform: scale(1.04);
+  }
+  &:focus-visible {
+    box-shadow: 0 0 2px 4px $accent;
+    border-radius: 8px;
+    outline: none;
   }
   &_grey {
     background-color: $gray;
@@ -124,6 +136,8 @@
     margin-bottom: 40px;
   }
   .form {
+    display: flex;
+    flex-direction: column;
     position: relative;
     margin: 0 auto;
   }
@@ -158,6 +172,7 @@
 @media (max-width: $tablet-width) {
   .form__color {
     text-align: center;
+    margin-bottom: 20px;
   }
   .form__radio-container {
     margin-bottom: 290px;
@@ -165,6 +180,9 @@
   }
   .form__label {
     margin-bottom: 0;
+    &:not(:last-child) {
+      margin-right: 14px;
+    }
   }
   .card__price {
     transform: none;

@@ -35,11 +35,17 @@
     color: $white;
     background-color: $black;
   }
+  &:focus-visible {
+    outline: none;
+    color: $white;
+    background-color: $black;
+  }
   @media (max-width: $tablet-width) {
     padding: 10px 20px;
     border-radius: 20px;
     color: $white;
-    &:hover {
+    &:hover,
+    &:focus-visible {
       color: $black;
       background-color: $white;
     }
