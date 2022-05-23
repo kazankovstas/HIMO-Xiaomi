@@ -4,7 +4,7 @@
 
 ##### <a href="https://kazankovstas.github.io/HIMO-Xiaomi/">View Live</a>
 
-**Xiaomi Himo C26** - лэндинг по продаже велосипедов компании Xiaomi.
+**Xiaomi Himo C26** - лендинг по продаже велосипедов компании Xiaomi.
 
     - Адаптивность сетки: мобильная, планшетная и десктопная версии (responsive layout)
     - Используемая методология: БЭМ.
